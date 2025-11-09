@@ -20,9 +20,7 @@ function App() {
       }
 
       const data = await response.json();
-      // For now, I'm assuming the backend returns a direct image URL.
-      // This will need to be updated when the backend is fully implemented.
-      setImageUrl(data.text);
+      setImageUrl(data.imageUrl);
     } catch (error) {
       console.error(error);
     }
